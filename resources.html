@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Birding Atlas of Wisconsin</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Logo" height="50">
+        Accessible Birding Atlas of Wisconsin
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="map.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="submit.html">Submit a Site</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="checklist.html">Checklist Generator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Resources Section -->
+  <div class="container my-5">
+    <div class="row">
+      <!-- Card 1: Choosing Your Gear -->
+    <div class="col-md-4 mb-4">
+      <a href="/Resources/choosinggear.html" class="card-link text-decoration-none">
+        <div class="card h-100">
+          <img src="assets/binos.png" class="card-img-top" alt="Choosing Your Binoculars">
+          <div class="card-body text-center">
+            <h5 class="card-title">Choosing Your Gear</h5>
+            <p class="card-text">Learn how to pick the best binoculars, cameras, and accessories for birding.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+      <!-- Card 2: Learning Bird Species -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="assets/learning species.png" class="card-img-top" alt="Learning Bird Species">
+          <div class="card-body text-center">
+            <h5 class="card-title">Learning Bird Species</h5>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#speciesModal">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3: Identifying Bird Calls -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="assets/learningcalls.png" class="card-img-top" alt="Identifying Bird Calls">
+          <div class="card-body text-center">
+            <h5 class="card-title">Identifying Bird Calls</h5>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#callsModal">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4: Keeping Checklists -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="assets/checklists.png" class="card-img-top" alt="Keeping Checklists">
+          <div class="card-body text-center">
+            <h5 class="card-title">Keeping Checklists</h5>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checklistsModal">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5: Birding Content and Blogs -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="assets/birdingcontent.png" class="card-img-top" alt="Birding Content and Blogs">
+          <div class="card-body text-center">
+            <h5 class="card-title">Birding Content and Blogs</h5>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contentModal">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6: Conservation Efforts -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="assets/conservation.png" class="card-img-top" alt="Conservation Efforts">
+          <div class="card-body text-center">
+            <h5 class="card-title">Conservation Efforts</h5>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#conservationModal">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modals -->
+  <!-- Modal 1: Choosing Your Binoculars -->
+  <div class="modal fade" id="binocularsModal" tabindex="-1" aria-labelledby="binocularsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="binocularsModalLabel">Choosing Your Binoculars</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Selecting the right binoculars is crucial for an enjoyable birding experience. Consider factors such as magnification, lens diameter, weight, and ergonomics. For beginners, models like the Nocs Provisions Standard Issue or Sightron 10x32 SII offer a good balance between quality and affordability. (<a href="https://nymag.com/strategist/article/best-gifts-for-bird-lovers.html?utm_campaign=feed-part&utm_medium=social_acct&utm_source=chatgpt.com" target="_blank">nymag.com</a>)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 2: Learning Bird Species -->
+<div class="modal fade" id="speciesModal" tabindex="-1" aria-labelledby="speciesModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="speciesModalLabel">Learning Bird Species</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Start by familiarizing yourself with local bird species. Field guides and mobile apps can be invaluable tools. Joining local birding groups or participating in bird walks can also enhance your learning experience.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3: Identifying Bird Calls -->
+<div class="modal fade" id="callsModal" tabindex="-1" aria-labelledby="callsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="callsModalLabel">Identifying Bird Calls</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Learning bird calls adds a new dimension to birding. Utilize audio guides and apps to practice. Consistent listening and practice in the field will improve your identification skills over time.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4: Keeping Checklists -->
+<div class="modal fade" id="checklistsModal" tabindex="-1" aria-labelledby="checklistsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="checklistsModalLabel">Keeping Checklists</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Maintaining checklists helps track your sightings and contributes to citizen science. Platforms like eBird allow you to record observations and share them with the birding community.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5: Birding Content and Blogs -->
+<div class="modal fade" id="contentModal" tabindex="-1" aria-labelledby="contentModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contentModalLabel">Birding Content and Blogs</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Engaging with birding blogs and content keeps you informed about recent sightings, tips, and stories. Explore various online resources to stay connected with the birding world.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6: Conservation Efforts -->
+<div class="modal fade" id="conservationModal" tabindex="-1" aria-labelledby="conservationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="conservationModalLabel">Conservation Efforts</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Participating in conservation efforts helps protect bird habitats. Support organizations and initiatives dedicated to preserving bird populations and their environments.</p>
+      </div>
+    </div>
+  </div>
+</div>

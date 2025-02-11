@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisconsin Accessible Birding Atlas</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Leaflet and Custom Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <style>
+        #map-container {
+            width: 80%;
+            height: 835px;
+            max-width: 1800px;
+            margin: 20px auto;
+            padding: 15px;
+            border: 3px solid #1A4D7A;
+            border-radius: 10px;
+            background: #ffffff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        #map {
+            height: 800px;
+            width: 100%;
+            border-radius: 8px;
+        }
+        .map-instructions {
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 15px;
+            width: 80%;
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #e9ecef;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" height="100">
+                Accessible Birding Atlas of Wisconsin
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="map.html">Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="submit.html">Submit a Site</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="checklist.html">Checklist Generator</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="map-container">
+        <div id="map"></div>
+    </div>
+
+    <div class="map-instructions">
+        <h3>How to Use This Map</h3>
+        <p>Click on a site marker to view details about accessibility, trails, and birding opportunities.</p>
+        <p>Use the zoom controls to explore different areas, and click "View Tour" to get more details on each location.</p>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="assets/scripts/main.js"></script>
+
+</body>
+</html>

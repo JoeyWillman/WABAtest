@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Birding Atlas of Wisconsin</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Logo" height="50">
+        Accessible Birding Atlas of Wisconsin
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="map.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="submit.html">Submit a Site</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="checklist.html">Checklist Generator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Submit a Birding Site</h2>
+
+    <form action="#" method="post" enctype="multipart/form-data" class="mb-5">
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="siteName" class="form-label">Site Name</label>
+        <input type="text" class="form-control" id="siteName" name="siteName" placeholder="Enter the name of the site" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" name="description" rows="4" placeholder="Provide a brief description of the site" required></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="file" class="form-label">Upload a Zip File (including GPX file and any images or documents)</label>
+        <input type="file" class="form-control" id="file" name="file" accept=".zip" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit Site</button>
+    </form>
+
+    <!-- Criteria Section -->
+    <div class="criteria-section">
+      <h3 class="mb-3">Site Submission Criteria</h3>
+      <p>Please ensure your submission includes the following information and criteria:</p>
+      
+      <ul class="list-group">
+        <li class="list-group-item">
+          <strong>Parking:</strong> Information on available parking spaces and whether they are accessible.
+        </li>
+        <li class="list-group-item">
+          <strong>Trail:</strong> Details about trail surface, length, and conditions.
+        </li>
+        <li class="list-group-item">
+          <strong>Accessibility:</strong> Describe features such as ramps, boardwalks, or any other accessibility considerations.
+        </li>
+        <li class="list-group-item">
+          <strong>Restrooms:</strong> Availability of restrooms, including any accessible facilities.
+        </li>
+        <li class="list-group-item">
+          <strong>Points of Interest (POIs):</strong> Notable features such as bird blinds, observation towers, or scenic spots.
+        </li>
+        <li class="list-group-item">
+          <strong>GPX File:</strong> A GPX file of the trail to help map the site accurately.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (for Navbar Toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

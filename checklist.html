@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Birding Atlas of Wisconsin</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Logo" height="50">
+        Accessible Birding Atlas of Wisconsin
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="map.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="submit.html">Submit a Site</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="checklist.html">Checklist Generator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- What is Checklist Tracking? -->
+  <div class="container mt-5">
+    <h2 class="text-center">Why keep a checklist?</h2>
+    <p class="mt-3">
+      Keeping a birding checklist is an essential tool for birdwatchers of all skill levels. A checklist helps you track the birds you've observed, understand seasonal migrations, and plan future birding outings. 
+      Knowing what birds are likely to be in the area you're visiting can enhance your experience and increase your chances of spotting exciting species. Whether you're a casual birder or a seasoned enthusiast, a checklist provides insights into bird behaviors and habitats.
+    </p>
+    <p>
+      To learn more about birding tips and tools, <a href="resources.html">visit our resources page</a>.
+    </p>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Bird Checklist Generator</h2>
+
+    <form id="checklist-form" class="mb-5">
+      <div class="mb-3">
+        <label for="date" class="form-label">Date</label>
+        <input type="date" class="form-control" id="date" name="date" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="city" class="form-label">City</label>
+        <input type="text" class="form-control" id="city" name="city" placeholder="Enter city" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="state" class="form-label">State</label>
+        <input type="text" class="form-control" id="state" name="state" placeholder="Enter state" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="radius" class="form-label">Search Radius (km)</label>
+        <select class="form-select" id="radius" name="radius" required>
+          <option value="5">5 km</option>
+          <option value="10">10 km</option>
+          <option value="20">20 km</option>
+          <option value="50">50 km</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Generate Checklist</button>
+    </form>
+
+    <div id="checklist-results" class="mt-5" style="display: none;">
+      <h3 class="mb-3">Bird Checklist</h3>
+      <ul id="checklist" class="list-group"></ul>
+      <button id="download-pdf" class="btn btn-success mt-3">Download as PDF</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>

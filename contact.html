@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Birding Atlas of Wisconsin</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.png" alt="Logo" height="50">
+        Accessible Birding Atlas of Wisconsin
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="map.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="submit.html">Submit a Site</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="checklist.html">Checklist Generator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+
+    <div class="row">
+      <!-- Contact Form -->
+      <div class="col-md-8">
+        <form id="contact-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject of your message" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4">
+        <h4 class="mt-4 mt-md-0">Contact Information</h4>
+        <ul class="list-unstyled">
+          <li><strong>Email:</strong> <a href="mailto:info@accessiblebirdingwi.org">info@accessiblebirdingwi.org</a></li>
+          <li><strong>Phone:</strong> (123) 456-7890</li>
+          <li><strong>Mailing Address:</strong><br>
+            Accessible Birding Atlas of Wisconsin<br>
+            123 Birdwatching Lane<br>
+            Madison, WI 53703
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (for Navbar Toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS (optional for form handling) -->
+  <script src="script.js"></script>
+</body>
+</html>

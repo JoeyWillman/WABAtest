@@ -1,0 +1,16 @@
+id,site_id,type,name,lat,lon,description,image
+1,1,Parking,Visitor Parking,43.0395,-89.418,Main visitor parking lot.,arb_parking.jpg
+2,1,Bathroom,Main Restroom,43.038,-89.4165,Accessible restrooms near entrance.,arb_restroom.jpg
+3,1,Trailhead,Arboretum Trailhead,43.039,-89.4175,Trailhead for main arboretum loop.,arb_trailhead.jpg
+4,2,Parking,Lakeshore Parking,43.077,-89.4095,Parking near the entrance.,lakeshore_parking.jpg
+5,2,Bathroom,Picnic Area Restroom,43.0755,-89.41,Restroom by the picnic area.,lakeshore_restroom.jpg
+6,2,Trailhead,Lakeshore Trailhead,43.076,-89.409,Trailhead leading to lake views.,lakeshore_trailhead.jpg
+7,3,Parking,Cherokee North Parking,43.1675,-89.363,Parking area near the boardwalk.,cherokee_north_parking.jpg
+8,3,Bathroom,Boardwalk Restroom,43.166,-89.365,Restroom facility at boardwalk entrance.,cherokee_north_restroom.jpg
+9,3,Trailhead,Cherokee North Trailhead,43.1665,-89.364,Start of Cherokee Marsh trails.,cherokee_north_trailhead.jpg
+10,4,Parking,Nine Springs Parking,43.018,-89.4005,Wetland parking lot.,nine_springs_parking.jpg
+11,4,Bathroom,Wetland Restroom,43.017,-89.3995,Restroom near wetland viewing area.,nine_springs_restroom.jpg
+12,4,Trailhead,Nine Springs Trailhead,43.0175,-89.4,Trailhead leading to observation deck.,nine_springs_trailhead.jpg
+13,5,Parking,Cherokee South Parking,43.1205,-89.3515,Parking near trailhead.,cherokee_south_parking.jpg
+14,5,Bathroom,Trailhead Restroom,43.1195,-89.352,Restroom along the trail.,cherokee_south_restroom.jpg
+15,5,Trailhead,Cherokee South Trailhead,43.12,-89.351,Main trailhead for Cherokee South trails.,cherokee_south_trailhead.jpg
